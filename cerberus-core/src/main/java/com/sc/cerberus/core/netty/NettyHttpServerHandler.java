@@ -4,7 +4,6 @@ import com.sc.cerberus.core.context.HttpRequestWraper;
 import com.sc.cerberus.core.netty.processor.NettyProcessor;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
-import io.netty.channel.SimpleChannelInboundHandler;
 import io.netty.handler.codec.http.FullHttpRequest;
 import io.netty.handler.codec.http.HttpRequest;
 import io.netty.util.ReferenceCountUtil;
