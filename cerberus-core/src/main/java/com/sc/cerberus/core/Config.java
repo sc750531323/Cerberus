@@ -1,5 +1,6 @@
 package com.sc.cerberus.core;
 
+import com.lmax.disruptor.*;
 import com.sc.cerberus.constants.BasicConst;
 import com.sc.cerberus.constants.BufferHelper;
 import com.sc.cerberus.util.NetUtils;
@@ -33,7 +34,9 @@ public class Config {
     //网关队列等待模式
     private String waitStrategy = "blocking";
 
-    /**http 参数配置*/
+    /**
+     * http 参数配置
+     */
     private int httpConnectTimeout = 30000;
 
     private int httpRequestTimeout = 30 * 1000;
@@ -46,6 +49,22 @@ public class Config {
 
     private int httpPooledConnectionIdleTimeout = 60 * 1000;
 
+    public WaitStrategy getATrueStrategy() {
+        switch (waitStrategy) {
+            case "blocking":
+                return new BlockingWaitStrategy();
+
+            case "yielding":
+                return new YieldingWaitStrategy();
+            case "busyspin":
+                return new BusySpinWaitStrategy();
+
+            case "sleeping":
+                return new SleepingWaitStrategy();
+            default:
+                return new BlockingWaitStrategy();
+        }
+    }
 
     public int getHttpConnectTimeout() {
         return httpConnectTimeout;

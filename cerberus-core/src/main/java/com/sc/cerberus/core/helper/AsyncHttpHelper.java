@@ -1,4 +1,4 @@
-package com.sc.cerberus.core;
+package com.sc.cerberus.core.helper;
 
 import org.asynchttpclient.*;
 

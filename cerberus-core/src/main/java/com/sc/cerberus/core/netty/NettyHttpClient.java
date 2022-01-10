@@ -1,6 +1,6 @@
 package com.sc.cerberus.core.netty;
 
-import com.sc.cerberus.core.AsyncHttpHelper;
+import com.sc.cerberus.core.helper.AsyncHttpHelper;
 import com.sc.cerberus.core.Config;
 import com.sc.cerberus.core.LifeCycle;
 import io.netty.buffer.PooledByteBufAllocator;
