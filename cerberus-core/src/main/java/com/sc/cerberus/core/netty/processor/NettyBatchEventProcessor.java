@@ -48,7 +48,7 @@ private static final String THREAD_NAME_PREFIX = "flusher-";
             ChannelHandlerContext channelHandlerContext = event.getChannelHandlerContext();
             try{
                 FullHttpResponse httpResponse = ResponseHelper.getHttpResponse(ResponseCode.INTERNAL_ERROR);
-                // 出错会写
+                // 出错回写
                 if(!HttpUtil.isKeepAlive(fullHttpRequest)){
                     channelHandlerContext.writeAndFlush(httpResponse).addListener(ChannelFutureListener.CLOSE);
                 }else{
