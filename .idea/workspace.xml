@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5ff58640-fb80-4dc2-9f81-468019712560" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/cerberus-core/src/main/java/com/sc/cerberus/core/netty/processor/NettyBatchEventProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/cerberus-core/src/main/java/com/sc/cerberus/core/netty/processor/NettyBatchEventProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cerberus-common/src/main/java/com/sc/cerberus/current/queue/mpmc/ConcurrentQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cerberus-common/src/main/java/com/sc/cerberus/current/queue/mpmc/MpmcConcurrentQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -25,44 +27,48 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cerberus-common/src/main/java/com/sc/cerberus/current/queue/flusher/ParrallelFlusher.java">
+        <entry file="file://$PROJECT_DIR$/cerberus-core/src/main/java/com/sc/cerberus/core/netty/processor/NettyBatchEventProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5175">
-              <caret line="126" column="47" selection-start-line="126" selection-start-column="47" selection-end-line="126" selection-end-column="47" />
+            <state relative-caret-position="422">
+              <caret line="42" column="9" lean-forward="true" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1798#1799#0" expanded="true" />
-                <element signature="e#1846#1847#0" expanded="true" />
-                <element signature="e#5859#5860#0" expanded="true" />
-                <element signature="e#5918#5919#0" expanded="true" />
-                <element signature="e#6018#6019#0" expanded="true" />
-                <element signature="e#6060#6061#0" expanded="true" />
-                <element signature="e#6297#6298#0" expanded="true" />
-                <element signature="e#6340#6341#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cerberus-core/src/main/java/com/sc/cerberus/core/Container.java">
+        <entry file="file://$PROJECT_DIR$/cerberus-common/src/main/java/com/sc/cerberus/current/queue/mpmc/ConcurrentQueue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="900">
+              <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cerberus-core/src/main/java/com/sc/cerberus/core/netty/processor/NettyBatchEventProcessor.java">
+        <entry file="file://$PROJECT_DIR$/cerberus-common/src/main/java/com/sc/cerberus/current/queue/mpmc/MpmcConcurrentQueue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="50" column="23" lean-forward="true" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
+            <state relative-caret-position="-1813">
+              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#156#157#0" expanded="true" />
+                <element signature="e#183#184#0" expanded="true" />
+                <element signature="e#220#221#0" expanded="true" />
+                <element signature="e#247#248#0" expanded="true" />
+                <element signature="e#284#285#0" expanded="true" />
+                <element signature="e#311#312#0" expanded="true" />
+                <element signature="e#350#351#0" expanded="true" />
+                <element signature="e#374#375#0" expanded="true" />
+                <element signature="e#417#418#0" expanded="true" />
+                <element signature="e#441#442#0" expanded="true" />
+                <element signature="e#487#488#0" expanded="true" />
+                <element signature="e#515#516#0" expanded="true" />
+                <element signature="e#570#571#0" expanded="true" />
+                <element signature="e#598#599#0" expanded="true" />
+                <element signature="e#644#645#0" expanded="true" />
+                <element signature="e#668#669#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -220,6 +226,8 @@
         <option value="$PROJECT_DIR$/cerberus-common/src/main/java/com/sc/cerberus/enums/ResponseCode.java" />
         <option value="$PROJECT_DIR$/cerberus-core/src/main/java/com/sc/cerberus/core/helper/ResponseHelper.java" />
         <option value="$PROJECT_DIR$/cerberus-core/src/main/java/com/sc/cerberus/core/netty/processor/NettyBatchEventProcessor.java" />
+        <option value="$PROJECT_DIR$/cerberus-common/src/main/java/com/sc/cerberus/current/queue/mpmc/ConcurrentQueue.java" />
+        <option value="$PROJECT_DIR$/cerberus-common/src/main/java/com/sc/cerberus/current/queue/mpmc/MpmcConcurrentQueue.java" />
       </list>
     </option>
   </component>
@@ -263,9 +271,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="873" />
-    <option name="y" value="20" />
-    <option name="width" value="3438" />
+    <option name="x" value="-2" />
+    <option name="y" value="6" />
+    <option name="width" value="2351" />
     <option name="height" value="1398" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -276,8 +284,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -319,6 +327,27 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="cerberus" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cerberus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cerberus" type="462c0819:PsiDirectoryNode" />
+              <item name="cerberus-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cerberus" type="462c0819:PsiDirectoryNode" />
+              <item name="queue" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cerberus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cerberus" type="462c0819:PsiDirectoryNode" />
+              <item name="cerberus-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cerberus" type="462c0819:PsiDirectoryNode" />
+              <item name="queue" type="462c0819:PsiDirectoryNode" />
+              <item name="mpmc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cerberus" type="b2602c69:ProjectViewProjectNode" />
@@ -374,9 +403,9 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1641827330333" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1642000786115" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/zhss/java架构师/资料/22.自研网关/09_自研中间件：生产级高性能入口网关04_高性能入口网关之高性能框架课程资料/04_高性能入口网关之高性能框架资料/01_代码/rapid" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
@@ -408,7 +437,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.MpmcConcurrentQueue">
     <configuration name="BootStrap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.sc.cerberus.core.BootStrap" />
       <module name="cerberus-core" />
@@ -448,8 +477,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MpmcConcurrentQueue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.sc.cerberus.current.queue.mpmc.MpmcConcurrentQueue" />
+      <module name="cerberus-common" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sc.cerberus.current.queue.mpmc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MpmcConcurrentQueue" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.DsMain" />
         <item itemvalue="Application.BootStrap" />
@@ -480,18 +523,19 @@
       <workItem from="1641609860449" duration="9037000" />
       <workItem from="1641735316615" duration="7285000" />
       <workItem from="1641823169334" duration="3785000" />
-      <workItem from="1641914184682" duration="56000" />
+      <workItem from="1641914184682" duration="787000" />
+      <workItem from="1641998365149" duration="2421000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58531000" />
+    <option name="totallyTimeSpent" value="61683000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="3456" height="1416" extended-state="6" />
+    <frame x="-2" y="6" width="2351" height="1398" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17402826" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25796595" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -500,7 +544,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23400936" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.36550632" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -516,7 +560,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Maven" order="5" visible="true" weight="0.0795053" />
+      <window_info anchor="right" id="Maven" order="5" weight="0.07933689" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Database" order="8" />
@@ -526,20 +570,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://D:/program/repository/io/netty/netty-all/4.1.51.Final/netty-all-4.1.51.Final.jar!/io/netty/channel/MultithreadEventLoopGroup.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="17" column="102" selection-start-line="17" selection-start-column="102" selection-end-line="17" selection-end-column="102" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/program/repository/io/netty/netty-all/4.1.51.Final/netty-all-4.1.51.Final.jar!/io/netty/channel/EventLoopGroup.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="9" column="60" selection-start-line="9" selection-start-column="60" selection-end-line="9" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/program/repository/io/netty/netty-all/4.1.51.Final/netty-all-4.1.51.Final.jar!/io/netty/channel/ChannelHandlerContext.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="419">
@@ -964,10 +994,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cerberus-core/src/main/java/com/sc/cerberus/core/netty/processor/NettyBatchEventProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="50" column="23" lean-forward="true" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
+        <state relative-caret-position="422">
+          <caret line="42" column="9" lean-forward="true" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cerberus-common/src/main/java/com/sc/cerberus/current/queue/mpmc/ConcurrentQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cerberus-common/src/main/java/com/sc/cerberus/current/queue/mpmc/MpmcConcurrentQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1813">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="e#156#157#0" expanded="true" />
+            <element signature="e#183#184#0" expanded="true" />
+            <element signature="e#220#221#0" expanded="true" />
+            <element signature="e#247#248#0" expanded="true" />
+            <element signature="e#284#285#0" expanded="true" />
+            <element signature="e#311#312#0" expanded="true" />
+            <element signature="e#350#351#0" expanded="true" />
+            <element signature="e#374#375#0" expanded="true" />
+            <element signature="e#417#418#0" expanded="true" />
+            <element signature="e#441#442#0" expanded="true" />
+            <element signature="e#487#488#0" expanded="true" />
+            <element signature="e#515#516#0" expanded="true" />
+            <element signature="e#570#571#0" expanded="true" />
+            <element signature="e#598#599#0" expanded="true" />
+            <element signature="e#644#645#0" expanded="true" />
+            <element signature="e#668#669#0" expanded="true" />
           </folding>
         </state>
       </provider>
