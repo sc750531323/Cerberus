@@ -1,7 +1,7 @@
 package com.sc.cerberus.current.queue.mpmc;
 
 import java.util.concurrent.atomic.AtomicLongArray;
-
+//缓冲行填充技术
 public class ContendedAtomicLong extends Contended{
     //一个缓冲行需要多少Long元素填充
     private static final int CACHE_LINE_LONGS = CACHE_LINE/Long.BYTES;

@@ -1,6 +1,7 @@
 package com.sc.cerberus.current.queue.mpmc;
 
-public class MpmcConcurrentQueue<E> implements ConcurrentQueue<E>{
+
+public class MpmcConcurrentQueue<E> implements ConcurrentQueue<E> {
 
     protected final int size;
 
@@ -10,20 +11,20 @@ public class MpmcConcurrentQueue<E> implements ConcurrentQueue<E>{
 
 
     //头部计数器
-
+    ContendedAtomicLong head = new ContendedAtomicLong(0L);
     //尾部计数器
+    ContendedAtomicLong tail = new ContendedAtomicLong(0L);
 
-
-    public MpmcConcurrentQueue(final  int capacity) {
+    public MpmcConcurrentQueue(final int capacity) {
         int c = 2;
-        while(c < capacity){
+        while (c < capacity) {
             c <<= 1;
         }
         size = c;
         mask = size - 1L;
         buffer = new Cell[size];
         for (int i = 0; i < size; i++) {
-            buffer[i] =new Cell<E>(i);
+            buffer[i] = new Cell<E>(i);
         }
     }
 
@@ -44,23 +45,30 @@ public class MpmcConcurrentQueue<E> implements ConcurrentQueue<E>{
 
     @Override
     public int size() {
-        return 0;
+        return (int)Math.max((tail.get() - head.get()),0);
     }
 
     @Override
     public int capacity() {
-        return 0;
+        return size;
     }
 
     @Override
     public boolean isEmpty() {
-        return false;
+        return head.get() == tail.get();
     }
 
     @Override
     public boolean contains(Object o) {
+        for (int i = 0; i < size(); i++) {
+            int slot = (int) ((head.get() + i) & mask);
+            if(buffer[slot].entry != null && buffer[slot].entry.equals(o)){
+                return true;
+            }
+        }
         return false;
     }
+
 
     @Override
     public int remove(E[] e) {
@@ -69,19 +77,22 @@ public class MpmcConcurrentQueue<E> implements ConcurrentQueue<E>{
 
     @Override
     public void clear() {
-
+        while (!isEmpty()){
+            poll();
+        }
     }
 
     //共享对象
     protected static final class Cell<R> {
 
         //计数器
-
+        final ContendedAtomicLong seq = new ContendedAtomicLong(0L);
 
         R entry;
 
-        Cell(final long s){
-
+        Cell(final long s) {
+            seq.set(s);
+            entry = null;
         }
 
     }
